@@ -3,7 +3,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { IconLink } from "../ui/IconLink";
 
-export function Header() {
+export function Navbar() {
   return (
     <header className="relative z-20 mx-auto max-w-7xl px-5 pt-6">
       <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
