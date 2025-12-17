@@ -4,6 +4,7 @@ export const projects: Project[] = [
   {
     id: "audion",
     title: "Audion — Concert Booking PWA",
+    slug: "audion",
     blurb:
       "Next.js + Stripe + Firebase • Multi-date events • Admin tools • PWA",
     tags: ["Next.js", "Stripe", "Firebase", "PWA"],
@@ -14,6 +15,7 @@ export const projects: Project[] = [
   {
     id: "weave",
     title: "Weave & Way — Textile E-commerce",
+    slug: "weave&way",
     blurb: "Filters • MongoDB • CMS • Polaroid cards • Mobile-first checkout",
     tags: ["Next.js", "MongoDB", "Redux", "Tailwind"],
     href: "/projects/weave-and-way",
@@ -23,6 +25,7 @@ export const projects: Project[] = [
   {
     id: "fitsync",
     title: "FitSync — Fitness Planner",
+    slug: "fitsync",
     blurb: "Intervals • Nutrition • Wger API • Offline PWA • Data viz",
     tags: ["React", "Redux", "PWA"],
     href: "/projects/fitsync",
@@ -32,6 +35,7 @@ export const projects: Project[] = [
   {
     id: "shaytree",
     title: "Shay's Tree — Plant Store",
+    slug: "shays-tree",
     blurb: "Firestore products • Categories • Carousel • Bootstrap UI",
     tags: ["React", "Firebase", "Bootstrap"],
     href: "/projects/shays-tree",
@@ -41,6 +45,7 @@ export const projects: Project[] = [
   {
     id: "eventshell",
     title: "Event Shell — Launch Ops",
+    slug: "eventshell",
     blurb: "Animated hero • Schedule tooling • Forms • A11y",
     tags: ["Next.js", "Framer Motion", "A11y"],
     href: "/projects/event-shell",
@@ -50,6 +55,7 @@ export const projects: Project[] = [
   {
     id: "fabricdb",
     title: "Fabric DB — Catalog & Search",
+    slug: "fabricDB",
     blurb: "Server components • Dynamic API routes • Infinite grid",
     tags: ["Next.js", "App Router", "Tailwind"],
     href: "/projects/fabricdb",
