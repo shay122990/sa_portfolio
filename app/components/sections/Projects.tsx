@@ -65,12 +65,7 @@ export function Projects({ projects }: Props) {
               </div>
 
               <div className="mt-3 flex gap-3">
-                <Link
-                  href={`/projects/${p.slug}`}
-                  className="text-sm underline underline-offset-4 hover:no-underline"
-                >
-                  Case Study
-                </Link>
+                <Link href={`/projects/${p.slug}`}>Case Study</Link>
 
                 <a
                   href={p.repo}
