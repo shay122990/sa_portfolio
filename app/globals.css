@@ -8,8 +8,10 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 body {
+  margin: 0;
   background: radial-gradient(
       1000px 600px at 10% -10%,
       rgba(124, 58, 237, 0.12),
