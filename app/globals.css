@@ -1,44 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0a0b10;
+  --bg: #0b0d1a;
+  --surface: #14162b;
   --fg: #ffffff;
-  --muted: #9aa0aa;
+  --muted: #a3a6c7;
+
+  --violet: #7a3af2;
+  --magenta: #9b2c7a;
+  --rose: #c56b8a;
+  --indigo: #3b3f8f;
+  --navy: #17103f;
+
+  --border: rgba(255, 255, 255, 0.08);
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
+
 body {
   margin: 0;
   background: radial-gradient(
-      1000px 600px at 10% -10%,
-      rgba(124, 58, 237, 0.12),
+      900px 600px at 12% -10%,
+      rgba(122, 58, 242, 0.22),
       transparent 60%
     ),
     radial-gradient(
-      800px 400px at 100% 10%,
-      rgba(56, 189, 248, 0.1),
-      transparent 60%
+      800px 500px at 90% 15%,
+      rgba(155, 44, 122, 0.22),
+      transparent 65%
     ),
     radial-gradient(
-      1000px 500px at 50% 120%,
-      rgba(52, 211, 153, 0.1),
+      700px 500px at 50% 120%,
+      rgba(197, 107, 138, 0.18),
       transparent 60%
     ),
-    #0a0b10;
+    linear-gradient(180deg, #0b0d1a 0%, #0a0b18 100%);
+  color: var(--fg);
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: #ffffff;
 }
+
 ::selection {
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  background: rgba(155, 44, 122, 0.35);
+  color: #ffffff;
 }
