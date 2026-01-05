@@ -6,7 +6,7 @@ import { projects } from "./lib/data/projects";
 
 export default function Page() {
   return (
-    <div className="min-h-[100svh] bg-[#0a0b10] text-[#e6e7ea] antialiased">
+    <div className="w-full overflow-x-hidden text-[#e6e7ea] antialiased">
       <Hero />
       <Services />
       <Projects projects={projects} />

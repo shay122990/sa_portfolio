@@ -5,7 +5,7 @@ import { IconLink } from "../ui/IconLink";
 
 export function Navbar() {
   return (
-    <header className="relative z-20 mx-auto max-w-7xl px-5 pt-6">
+    <header className="relative z-20 mx-auto max-w-7xl px-5 py-5">
       <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
         <div className="flex items-center gap-3">
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-linear-to-br from-sky-400/60 via-violet-400/60 to-emerald-400/60 ring-1 ring-white/20 shadow-[0_0_40px_2px_rgba(56,189,248,.25)]" />

@@ -4,7 +4,7 @@ import { Magnetic } from "../ui/Magnetic";
 
 export function Footer() {
   return (
-    <footer className="relative z-10 mx-auto max-w-7xl px-5 pb-14">
+    <footer className="relative z-10 mx-auto max-w-7xl px-5 py-5">
       <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-xl md:flex-row md:text-left">
         <div>
           <b className="text-white">Let’s build something users love.</b>
@@ -30,9 +30,6 @@ export function Footer() {
             </a>
           </Magnetic>
         </div>
-      </div>
-      <div className="mt-6 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} Shay — Frontend Engineer
       </div>
     </footer>
   );
