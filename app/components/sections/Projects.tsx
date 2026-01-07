@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "../../types/project";
 import { TiltCard } from "../ui/TiltCard";
-import { ArrowUpRight } from "lucide-react";
+import { IoIosArrowForward } from "react-icons/io";
 
 type Props = { projects: Project[] };
 
@@ -63,7 +63,7 @@ export function Projects({ projects }: Props) {
                   className="shrink-0 rounded-xl border border-white/15 bg-white/10 p-2 text-white/90 backdrop-blur-xl transition hover:scale-105"
                   aria-label="Open case study"
                 >
-                  <ArrowUpRight size={18} />
+                  <IoIosArrowForward size={18} />
                 </Link>
               </div>
 

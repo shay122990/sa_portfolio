@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { IoIosArrowForward } from "react-icons/io";
 import { Background } from "../ui/Background";
 import { Magnetic } from "../ui/Magnetic";
 
@@ -53,7 +53,7 @@ export function Hero() {
                 className="group inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition hover:bg-white/15"
               >
                 View projects
-                <ArrowUpRight
+                <IoIosArrowForward
                   size={18}
                   className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 />

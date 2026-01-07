@@ -31,7 +31,6 @@ export default function RootLayout({
         <main className="w-full flex-1 overflow-x-hidden">
           <div className="mx-auto max-w-7xl px-5">{children}</div>
         </main>
-
         <Footer />
       </body>
     </html>
