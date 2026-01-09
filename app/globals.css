@@ -1,27 +1,61 @@
 @import "tailwindcss";
 
+/* ===============================
+   CSS VARIABLES
+================================ */
 :root {
-  --bg: #3f567f;
-  --surface: #412653;
   --fg: #ffffff;
   --muted: #c9ced8;
+
+  --bg: #3f567f;
+  --surface: #412653;
+  --ink: #1f2a3a;
 
   --lilac: #d174d2;
   --coral: #e0563f;
   --plum: #5a2d5f;
-  --ink: #1f2a3a;
 
   --border: rgba(255, 255, 255, 0.1);
+
+  /* mouse glow defaults */
+  --mx: 50vw;
+  --my: 30vh;
 }
 
+/* ===============================
+   DOCUMENT BASE
+================================ */
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  overflow-x: clip;
+}
+
+@supports not (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 body {
   margin: 0;
+  background: transparent; /* IMPORTANT: background lives on ::before */
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ===============================
+   BASE GRADIENT BACKGROUND
+================================ */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
   background: radial-gradient(
       900px 600px at 15% 10%,
       rgba(209, 116, 210, 0.35),
@@ -38,20 +72,45 @@ body {
       transparent 60%
     ),
     linear-gradient(180deg, #3f567f 0%, #1f2a3a 100%);
-  color: var(--fg);
-  font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
+/* ===============================
+   GLOBAL MOUSE GLOW
+================================ */
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background: radial-gradient(
+    600px circle at var(--mx) var(--my),
+    rgba(167, 139, 250, 0.14),
+    transparent 45%
+  );
+}
+
+/* Disable mouse glow on touch devices */
+@media (hover: none) {
+  html::after {
+    display: none;
+  }
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
+  color: #fff;
 }
 
 ::selection {
   background: rgba(209, 116, 210, 0.45);
-  color: #ffffff;
+  color: #fff;
 }

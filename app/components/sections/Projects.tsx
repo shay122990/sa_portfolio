@@ -10,9 +10,8 @@ type Props = { projects: Project[] };
 
 export function Projects({ projects }: Props) {
   return (
-    <section id="work" className="relative z-10 mx-auto max-w-7xl px-5 py-10">
+    <section id="work" className="relative z-10 mx-auto max-w-7xl px-5 py-10 ">
       <h2 className="mb-6 text-2xl">Selected work</h2>
-
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 items-stretch">
         {projects.map((p) => (
           <TiltCard key={p.id}>
