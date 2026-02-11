@@ -2,7 +2,7 @@
 
 export function Footer() {
   return (
-    <footer className="w-full">
+    <footer id="footer" className="w-full ">
       <div className="mx-auto max-w-7xl px-5 py-5">
         <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-xl md:flex-row md:text-left">
           <div>
@@ -21,7 +21,8 @@ export function Footer() {
             </a>
 
             <a
-              href="#work"
+              href="https://github.com/shay122990"
+              target="_blank"
               className="rounded-2xl bg-linear-to-r from-sky-400/30 via-violet-400/30 to-emerald-400/30 px-4 py-2 ring-1 ring-white/20 backdrop-blur-xl"
             >
               See Work

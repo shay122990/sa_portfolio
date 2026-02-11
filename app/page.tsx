@@ -1,8 +1,9 @@
 import { Hero } from "./components/sections/Hero";
 import { Services } from "./components/sections/Services";
 import { Projects } from "./components/sections/Projects";
-import { Snapshot } from "./components/sections/Snapshot";
 import { projects } from "./lib/data/projects";
+import { ProcessSkills } from "./components/sections/ProcessSkill";
+// import { About } from "./components/sections/About";
 
 export default function Page() {
   return (
@@ -10,7 +11,8 @@ export default function Page() {
       <Hero />
       <Services />
       <Projects projects={projects} />
-      <Snapshot />
+      <ProcessSkills />
+      {/* <About /> */}
     </div>
   );
 }

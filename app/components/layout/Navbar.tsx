@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
 import Logo from "../../../public/logo-icon.ico";
+import Link from "next/link";
 
 type IconLinkProps = {
   href: string;
@@ -32,13 +32,16 @@ export function Navbar() {
   return (
     <header className="relative z-20 mx-auto max-w-7xl px-5 py-5 w-full">
       <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
-        <div className="flex items-center gap-3">
+        <Link
+          href="/"
+          className="flex items-center gap-3 hover:opacity-80 transition"
+        >
           <div
             className="inline-flex h-7 w-7 items-center justify-center rounded-full
-                          bg-linear-to-br from-sky-400/60 via-violet-400/60 to-emerald-400/60
-                          ring-1 ring-white/20
-                          shadow-[0_0_40px_2px_rgba(56,189,248,.25)]
-                          overflow-hidden"
+               bg-linear-to-br from-sky-400/60 via-violet-400/60 to-emerald-400/60
+               ring-1 ring-white/20
+               shadow-[0_0_40px_2px_rgba(56,189,248,.25)]
+               overflow-hidden"
           >
             <Image
               src={Logo}
@@ -50,7 +53,7 @@ export function Navbar() {
 
           <b className="font-extrabold tracking-tight">SHAY</b>
           <span className="text-white/50 md:inline">・ Frontend Developer</span>
-        </div>
+        </Link>
 
         <div className="flex items-center gap-2">
           <IconLink href="mailto:shay.asanova@gmail.com" label="Email">

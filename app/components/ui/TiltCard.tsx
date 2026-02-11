@@ -31,7 +31,7 @@ export function TiltCard({ children }: Props) {
       ref={ref}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
-      className="[transform-style:preserve-3d]"
+      className="[transform-3d]"
       style={{
         transform:
           "perspective(900px) rotateX(var(--rx,0)) rotateY(var(--ry,0))",

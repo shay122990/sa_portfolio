@@ -1,6 +1,7 @@
 "use client";
 
 import { IoIosArrowForward } from "react-icons/io";
+import { GlassCard } from "../ui/GlassCard";
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-5 text-lg text-white/75">
-          I design and ship production-ready interfaces with a focus on
+          I design and ship beautiful and scalable interfaces with a focus on
           performance, accessibility, and clean architecture.
         </p>
 
@@ -36,14 +37,14 @@ export function Hero() {
           </a>
 
           <a
-            href="#services"
+            href="mailto:shay.asanova@gmail.com?subject=Project%20Inquiry"
             className="inline-flex items-center gap-2 rounded-2xl bg-linear-to-r from-sky-400/30 via-violet-400/30 to-emerald-400/30 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/20 backdrop-blur-xl transition hover:opacity-90"
           >
             Hire me
           </a>
 
           <a
-            href="#contact"
+            href="#footer"
             className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-transparent px-5 py-3 text-sm font-medium text-white/80 backdrop-blur-xl transition hover:border-white/20 hover:text-white"
           >
             Contact
@@ -51,18 +52,9 @@ export function Hero() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <div className="text-sm text-white/60">Performance</div>
-            <div className="mt-1 text-white">Core Web Vitals focused</div>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <div className="text-sm text-white/60">Code quality</div>
-            <div className="mt-1 text-white">Scalable & maintainable</div>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <div className="text-sm text-white/60">Availability</div>
-            <div className="mt-1 text-white">Dubai · Remote</div>
-          </div>
+          <GlassCard title="Performance" desc="Core Web Vitals focused" />
+          <GlassCard title="Code quality" desc="Scalable & maintainable" />
+          <GlassCard title="Availability" desc="Dubai · Remote · On site" />
         </div>
 
         <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-white/15 to-transparent" />
