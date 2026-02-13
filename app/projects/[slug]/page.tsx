@@ -58,14 +58,16 @@ export default async function ProjectPage({ params }: Props) {
 
         {/* HERO IMAGE */}
         {project.image ? (
-          <div className="relative mt-6 aspect-video overflow-hidden">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              priority
-              className="object-contain"
-            />
+          <div className="relative mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div className="relative aspect-video">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
           </div>
         ) : null}
       </section>
@@ -92,41 +94,73 @@ export default async function ProjectPage({ params }: Props) {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">Desktop Experience</h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div
+            className="
+              grid gap-8
+              grid-cols-[repeat(auto-fit,minmax(320px,1fr))]
+              xl:grid-cols-[repeat(auto-fit,minmax(380px,1fr))]
+            "
+          >
             {desktopShots.map((img, i) => (
               <div
                 key={`${img}-${i}`}
-                className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5"
               >
-                <Image
-                  src={img}
-                  alt={`${project.title} desktop screenshot ${i + 1}`}
-                  fill
-                  className="object-cover"
-                />
+                <div className="relative aspect-video">
+                  <Image
+                    src={img}
+                    alt={`${project.title} desktop screenshot ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 70vw, 50vw"
+                  />
+                </div>
               </div>
             ))}
           </div>
         </section>
       ) : null}
-
-      {/* MOBILE ROW */}
+      {/* MOBILE: small scroll on mobile, grid on desktop */}
       {mobileShots.length ? (
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">Mobile Experience</h2>
 
-          <div className="flex gap-6 overflow-x-auto pb-2">
+          <div
+            className="
+              -mx-5 px-5
+              flex gap-5 overflow-x-auto pb-3
+              snap-x snap-mandatory
+              md:mx-0 md:px-0
+              md:grid md:overflow-visible md:pb-0
+              md:gap-8
+              md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]
+              lg:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]
+            "
+          >
             {mobileShots.map((img, i) => (
               <div
                 key={`${img}-${i}`}
-                className="relative w-56 shrink-0 aspect-video overflow-hidden rounded-3xl border border-white/10 bg-white/5"
+                className="
+                  relative shrink-0
+                  w-[55vw] sm:w-[220px]
+                  snap-center
+                  overflow-hidden
+                  rounded-[1.75rem]
+                  border border-white/10 bg-white/5
+                  md:w-auto md:snap-none
+                "
               >
-                <Image
-                  src={img}
-                  alt={`${project.title} mobile screenshot ${i + 1}`}
-                  fill
-                  className="object-cover"
-                />
+                <div className="relative aspect-9/19">
+                  <Image
+                    src={img}
+                    alt={`${project.title} mobile screenshot ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 55vw, (max-width: 1024px) 240px, 280px"
+                  />
+                </div>
+
+                <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] ring-1 ring-white/10" />
               </div>
             ))}
           </div>

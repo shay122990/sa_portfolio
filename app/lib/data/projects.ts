@@ -21,12 +21,14 @@ export const projects: Project[] = [
 
     screenshots: {
       desktop: [
-        "/projects/audion/desktop-1.webp",
-        "/projects/audion/desktop-2.webp",
+        "/audion/desktop-1.webp",
+        "/audion/desktop-2.webp",
+        "/audion/desktop-3.webp",
       ],
       mobile: [
-        "/projects/audion/mobile-1.webp",
-        "/projects/audion/mobile-2.webp",
+        "/audion/mobile-1.webp",
+        "/audion/mobile-2.webp",
+        "/audion/mobile-3.webp",
       ],
     },
 
@@ -69,13 +71,11 @@ export const projects: Project[] = [
     live: "https://weave-way.vercel.app/",
     screenshots: {
       desktop: [
-        "/projects/audion/desktop-1.webp",
-        "/projects/audion/desktop-2.webp",
+        "/weave&way/desktop-1.webp",
+        "/weave&way/desktop-2.webp",
+        "/weave&way/desktop-3.webp",
       ],
-      mobile: [
-        "/projects/audion/mobile-1.webp",
-        "/projects/audion/mobile-2.webp",
-      ],
+      mobile: ["/weave&way/mobile-1.webp", "/weave&way/mobile-2.webp"],
     },
     overview:
       "Weave & Way is a full-stack fabric catalog application built to simulate a real-world content management workflow. Users can browse fabrics by category or search, while authenticated admins manage inventory through a protected dashboard with full CRUD functionality.",
@@ -120,14 +120,13 @@ export const projects: Project[] = [
 
     screenshots: {
       desktop: [
-        "/projects/today-fitness/desktop-dashboard.webp",
-        "/projects/today-fitness/desktop-planner.webp",
-        "/projects/today-fitness/desktop-insights.webp",
+        "/today-fitness-app/desktop-1.webp",
+        "/today-fitness-app/desktop-2.webp",
       ],
       mobile: [
-        "/projects/today-fitness/mobile-dashboard.webp",
-        "/projects/today-fitness/mobile-planner.webp",
-        "/projects/today-fitness/mobile-insights.webp",
+        "/today-fitness-app/mobile-1.webp",
+        "/today-fitness-app/mobile-2.webp",
+        "/today-fitness-app/mobile-3.webp",
       ],
     },
 
@@ -172,15 +171,11 @@ export const projects: Project[] = [
 
     screenshots: {
       desktop: [
-        "/projects/shays-tree/desktop-home.webp",
-        "/projects/shays-tree/desktop-category.webp",
-        "/projects/shays-tree/desktop-checkout.webp",
+        "/shays-tree/desktop-1.webp",
+        "/shays-tree/desktop-2.webp",
+        "/shays-tree/desktop-3.webp",
       ],
-      mobile: [
-        "/projects/shays-tree/mobile-home.webp",
-        "/projects/shays-tree/mobile-cart.webp",
-        "/projects/shays-tree/mobile-checkout.webp",
-      ],
+      mobile: ["/shays-tree/mobile-1.webp", "/shays-tree/mobile-2.webp"],
     },
 
     overview:
@@ -225,14 +220,14 @@ export const projects: Project[] = [
 
     screenshots: {
       desktop: [
-        "/projects/crwn/desktop-home.webp",
-        "/projects/crwn/desktop-category.webp",
-        "/projects/crwn/desktop-checkout.webp",
+        "/crwn/desktop-1.webp",
+        "/crwn/desktop-2.webp",
+        "/crwn/desktop-3.webp",
       ],
       mobile: [
-        "/projects/crwn/mobile-home.webp",
-        "/projects/crwn/mobile-cart.webp",
-        "/projects/crwn/mobile-checkout.webp",
+        "/crwn/mobile-1.webp",
+        "/crwn/mobile-2.webp",
+        "/crwn/mobile-3.webp",
       ],
     },
 
@@ -276,19 +271,19 @@ export const projects: Project[] = [
 
     screenshots: {
       desktop: [
-        "/projects/alleyway/desktop-hero.webp",
-        "/projects/alleyway/desktop-events.webp",
-        "/projects/alleyway/desktop-contact.webp",
+        "/alleyway/desktop-1.webp",
+        "/alleyway/desktop-2.webp",
+        "/alleyway/desktop-3.webp",
       ],
       mobile: [
-        "/projects/alleyway/mobile-hero.webp",
-        "/projects/alleyway/mobile-menu.webp",
-        "/projects/alleyway/mobile-contact.webp",
+        "/alleyway/mobile-1.webp",
+        "/alleyway/mobile-2.webp",
+        "/alleyway/mobile-3.webp",
       ],
     },
 
     overview:
-      "Alleyway is a corporate events and project management website built to establish a strong digital presence for a real-world client. The platform showcases services, portfolio work, and upcoming events while acting as a lead-generation channel through its contact forms.",
+      "Alleyway is a corporate 2 and project management website built to establish a strong digital presence for a real-world client. The platform showcases services, portfolio work, and upcoming events while acting as a lead-generation channel through its contact forms.",
 
     architecture:
       "The site is built with Next.js 14 using the App Router for structured routing and SEO optimization. Tailwind CSS provides a consistent design system, while Framer Motion enhances user experience through smooth entrance animations and scroll-based transitions. React Hook Form is used to manage form state efficiently, and reCAPTCHA integration helps protect against spam submissions. The project is deployed with production-ready optimizations including sitemap generation and metadata configuration.",
