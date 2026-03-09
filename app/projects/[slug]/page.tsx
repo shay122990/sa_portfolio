@@ -167,47 +167,60 @@ export default async function ProjectPage({ params }: Props) {
         </section>
       ) : null}
 
-      {/* OVERVIEW */}
-      {project.overview ? (
-        <section className="space-y-4 max-w-3xl">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p className="text-white/70 leading-relaxed">{project.overview}</p>
-        </section>
-      ) : null}
+      {/* DETAILS */}
+      <section className="grid gap-6 lg:grid-cols-2">
+        {/* OVERVIEW */}
+        {project.overview ? (
+          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold">Overview</h2>
+            <p className="mt-4 text-white/70 leading-8">{project.overview}</p>
+          </article>
+        ) : null}
 
-      {/* ARCHITECTURE */}
-      {project.architecture ? (
-        <section className="space-y-4 max-w-3xl">
-          <h2 className="text-2xl font-semibold">Architecture</h2>
-          <p className="text-white/70 leading-relaxed">
-            {project.architecture}
-          </p>
-        </section>
-      ) : null}
+        {/* ARCHITECTURE */}
+        {project.architecture ? (
+          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold">Architecture</h2>
+            <p className="mt-4 text-white/70 leading-8">
+              {project.architecture}
+            </p>
+          </article>
+        ) : null}
 
-      {/* CHALLENGES */}
-      {project.challenges?.length ? (
-        <section className="space-y-4 max-w-3xl">
-          <h2 className="text-2xl font-semibold">Challenges</h2>
-          <ul className="list-disc pl-5 text-white/70 space-y-2">
-            {project.challenges.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+        {/* CHALLENGES */}
+        {project.challenges?.length ? (
+          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:col-span-2">
+            <h2 className="text-2xl font-semibold">Challenges</h2>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {project.challenges.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-white/70 leading-7"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ) : null}
 
-      {/* IMPROVEMENTS */}
-      {project.improvements?.length ? (
-        <section className="space-y-4 max-w-3xl">
-          <h2 className="text-2xl font-semibold">Future Improvements</h2>
-          <ul className="list-disc pl-5 text-white/70 space-y-2">
-            {project.improvements.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+        {/* IMPROVEMENTS */}
+        {project.improvements?.length ? (
+          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:col-span-2">
+            <h2 className="text-2xl font-semibold">Future Improvements</h2>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {project.improvements.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-white/70 leading-7"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ) : null}
+      </section>
     </main>
   );
 }
