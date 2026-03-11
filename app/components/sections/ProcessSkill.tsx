@@ -6,7 +6,7 @@ import skillGroups from "@/app/lib/data/skillGroups";
 
 export function ProcessSkills() {
   return (
-    <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 space-y-20">
+    <section className="relative z-10 mx-auto max-w-7xl px-5 md:py-20 space-y-20">
       <div>
         <h2 className="text-3xl font-semibold">How I Work</h2>
 

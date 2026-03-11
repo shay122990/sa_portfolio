@@ -51,8 +51,8 @@ export function Navbar() {
             />
           </div>
 
-          <b className="font-extrabold tracking-tight">SHAY</b>
-          <span className="text-white/50 md:inline">・ Frontend Developer</span>
+          {/* <b className="font-extrabold tracking-tight">SHAY</b> */}
+          <span className="text-white/50 md:inline">Frontend Developer</span>
         </Link>
 
         <div className="flex items-center gap-2">
