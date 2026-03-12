@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }: Props) {
   const mobileShots = project.screenshots?.mobile ?? [];
 
   return (
-    <main className="mx-auto max-w-6xl px-5 py-5 md:py-20 space-y-20">
+    <main className="mx-auto max-w-7xl px-5 py-5 md:py-20 space-y-20">
       {/* HERO */}
       <section className="space-y-6">
         <h1 className="text-4xl font-bold">{project.title}</h1>

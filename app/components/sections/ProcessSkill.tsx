@@ -6,14 +6,12 @@ import skillGroups from "@/app/lib/data/skillGroups";
 
 export function ProcessSkills() {
   return (
-    <section className="relative z-10 mx-auto max-w-7xl px-5 md:py-20 space-y-20">
+    <section
+      id="process"
+      className="relative z-10 px-6 py-6 w-full flex flex-col gap-5 mb-12"
+    >
       <div>
         <h2 className="text-3xl font-semibold">How I Work</h2>
-
-        <p className="mt-3 max-w-2xl text-white/70">
-          A structured approach to shipping scalable, high-quality web
-          applications.
-        </p>
 
         <p className="mt-3 max-w-2xl text-white/60 leading-relaxed">
           I approach frontend development with a systems mindset — prioritizing
@@ -27,17 +25,17 @@ export function ProcessSkills() {
           ))}
         </div>
       </div>
+      <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-white/15 to-transparent" />
 
       <div>
         <h2 className="text-3xl font-semibold">Tech Stack</h2>
-        <p className="mt-3 max-w-2xl text-white/70">
-          A focused toolkit for building modern interfaces and secure
-          integrations.
-        </p>
-
-        <div className="mt-10 grid gap-8 md:grid-cols-2">
+        <div className="mt-5 grid gap-8 md:grid-cols-2">
           {skillGroups.map((g) => (
-            <div key={g.title} className="space-y-4">
+            <div
+              key={g.title}
+              className="space-y-4 border border-[var(--bg)] rounded-xl py-3 px-3
+"
+            >
               <h3 className="text-lg font-medium">{g.title}</h3>
 
               <div className="flex flex-wrap gap-3">
@@ -54,7 +52,6 @@ export function ProcessSkills() {
           ))}
         </div>
       </div>
-      <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-white/15 to-transparent" />
     </section>
   );
 }

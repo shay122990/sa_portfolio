@@ -2,10 +2,7 @@ import { GlassCard } from "../ui/GlassCard";
 
 export function Services() {
   return (
-    <section
-      id="services"
-      className="relative z-10 mx-auto max-w-7xl px-5 pb-6"
-    >
+    <section id="services" className="relative z-10 px-6 py-6 w-full">
       <h2 className="mb-4 text-2xl">What I ship</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <GlassCard
@@ -18,7 +15,7 @@ export function Services() {
         />
         <GlassCard
           title="E-commerce"
-          desc="Stripe flows, product filters, secure checkout."
+          desc="Stripe flows, product filters, secure checkout. Secure Admin Dashboards"
         />
       </div>
     </section>

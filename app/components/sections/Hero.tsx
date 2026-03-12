@@ -5,14 +5,10 @@ import { GlassCard } from "../ui/GlassCard";
 
 export function Hero() {
   return (
-    <section className="relative z-10 mx-auto max-w-7xl px-5 pb-16">
+    <section className="relative z-10 px-6 py-6 w-full">
       <div className="max-w-3xl">
-        <span className="inline-block rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs text-white/70 backdrop-blur-xl">
-          Frontend Developer · React · Next.js
-        </span>
-
         <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
-          Building{" "}
+          Building -{" "}
           <span className="bg-linear-to-r from-sky-300 via-violet-300 to-emerald-300 bg-clip-text text-transparent">
             fast, accessible
           </span>{" "}
