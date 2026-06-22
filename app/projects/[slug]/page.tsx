@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { projects } from "../../lib/data/projects";
+import { IoArrowBack } from "react-icons/io5";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -27,6 +29,13 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-5 md:py-20 space-y-20">
+      <Link
+        href="/"
+        className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-2 hover:bg-white/20 transition"
+      >
+        <IoArrowBack />
+        Home
+      </Link>
       {/* HERO */}
       <section className="space-y-6">
         <h1 className="text-4xl font-bold">{project.title}</h1>
