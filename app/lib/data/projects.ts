@@ -67,8 +67,8 @@ export const projects: Project[] = [
       "TypeScript",
     ],
     image: "/projects/weave&way.webp",
-    repo: "https://github.com/shay122990/weave-and-way",
-    live: "https://weave-way.vercel.app/",
+    repo: "https://github.com/shay122990/weave-n-way-2.0",
+    live: "https://weave-n-way-2-0.vercel.app/",
     screenshots: {
       desktop: [
         "/weave&way/desktop-1.webp",
@@ -300,6 +300,48 @@ export const projects: Project[] = [
       "Introduce analytics tracking and performance monitoring",
       "Expand structured data (schema markup) for enhanced SEO visibility",
       "Add a blog or insights section with dynamic content rendering",
+    ],
+  },
+  {
+    id: "react",
+    slug: "react-projects",
+    title: "React Projects Archive",
+    blurb:
+      "A collection of React projects built to practice and demonstrate core frontend concepts, reusable components, state management, API integration, interactive UI, and responsive design.",
+    tags: ["React", "JavaScript", "CSS", "React Hooks"],
+    image: "/projects/react-projects.webp",
+    repo: "https://github.com/shay122990/ReactJS-basics-practice-projects",
+    live: "https://react-js-basics-practice-projects.vercel.app/",
+
+    screenshots: {
+      desktop: [
+        "/react-projects/desktop-1.webp",
+        "/react-projects/desktop-2.webp",
+        "/react-projects/desktop-3.webp",
+      ],
+      mobile: [
+        "/react-projects/mobile-1.webp",
+        "/react-projects/mobile-2.webp",
+      ],
+    },
+
+    overview:
+      "The React Projects Archive is a growing collection of projects built to strengthen practical React and JavaScript skills through hands-on development. Rather than focusing on a single application, the archive covers a variety of interfaces and interactive features, including reusable components, state-driven UI, forms, dynamic lists, API-based applications, and custom UI interactions. Each project focuses on solving a specific frontend problem while reinforcing patterns used in real-world React development.",
+
+    architecture:
+      "The projects are built primarily with React and modern JavaScript, with TypeScript and Next.js used across selected projects. React Hooks are used extensively for managing component state, side effects, and reusable logic. The archive also includes a search feature. This allows anyone who wants to learn or practice a specific hook or JS method to search that project.",
+
+    challenges: [
+      "Building a wide range of interfaces while maintaining reusable and organized React component patterns",
+      "Managing state and user interactions across different types of applications",
+      "Implementing interactive UI features from scratch rather than relying entirely on third-party libraries",
+      "Working with APIs, asynchronous data, forms, and dynamic content",
+      "Creating responsive interfaces that work across desktop and mobile screen sizes",
+    ],
+
+    improvements: [
+      "Continue expanding the archive with more complex real-world applications",
+      "Add additional projects focused on advanced state management and application architecture",
     ],
   },
 ];
