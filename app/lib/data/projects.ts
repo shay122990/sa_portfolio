@@ -344,4 +344,43 @@ export const projects: Project[] = [
       "Add additional projects focused on advanced state management and application architecture",
     ],
   },
+  {
+    id: "javascript",
+    slug: "javascript-projects",
+    title: "JavaScript Projects Archive",
+    blurb:
+      "A collection of JavaScript projects built to strengthen core frontend development skills through hands-on practice with the DOM, events, state, browser APIs, and interactive UI.",
+    tags: ["JavaScript", "HTML", "CSS", "DOM", "Web APIs"],
+    image: "/projects/javascript-projects.webp",
+    repo: "https://github.com/shay122990/Vanilla-JS-DOM-practice-projects",
+    live: "https://dom-vanilla-js-projects.netlify.app/",
+
+    screenshots: {
+      desktop: [
+        "/javascript-projects/desktop-1.webp",
+        "/javascript-projects/desktop-2.webp",
+      ],
+      mobile: ["/javascript-projects/mobile-1.webp"],
+    },
+
+    overview:
+      "The JavaScript Projects Archive is a growing collection of hands-on projects designed to strengthen practical JavaScript and frontend development skills. The projects cover a range of browser-based functionality, including DOM manipulation, event handling, user input, dynamic content, application state, forms, timers, interactive components, and browser APIs. Each project focuses on a specific frontend problem or JavaScript concept, providing practical experience building functionality and interfaces from scratch.",
+
+    architecture:
+      "The projects are built using JavaScript, HTML, and CSS, with each project structured as an independent application. JavaScript handles DOM manipulation, event-driven interactions, application logic, state, and browser APIs, while HTML and CSS provide the structure and presentation. The archive also includes a search feature, allowing projects to be filtered and explored based on the concepts and JavaScript methods they demonstrate.",
+
+    challenges: [
+      "Building interactive applications from scratch while developing a strong understanding of JavaScript fundamentals",
+      "Working extensively with DOM manipulation, events, and browser APIs",
+      "Managing application state and user interactions using JavaScript",
+      "Implementing interactive UI components without relying on frontend frameworks",
+      "Creating responsive interfaces that work across desktop and mobile screen sizes",
+    ],
+
+    improvements: [
+      "Continue expanding the archive with more advanced JavaScript and DOM projects",
+      "Add projects focused on asynchronous JavaScript, APIs, and more complex application logic",
+      "Expand the search and filtering system to organize projects by JavaScript concepts, methods, and browser APIs",
+    ],
+  },
 ];
